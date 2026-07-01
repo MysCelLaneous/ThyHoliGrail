@@ -262,3 +262,23 @@ footer{
 }
 
 }
+.nav.active {
+  display: flex;
+  position: absolute;
+  top: 90px;
+  right: 8%;
+  background: var(--cream);
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.12);
+}
+
+.site-header.scrolled {
+  padding: 14px 8%;
+  box-shadow: 0 12px 35px rgba(0,0,0,.08);
+}
+
+.site-header.scrolled .brand img {
+  height: 55px;
+}
