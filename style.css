@@ -1,0 +1,37 @@
+:root {
+  --cream: #f7efe3;
+  --sand: #d8c1a3;
+  --cocoa: #4b2b20;
+  --amber: #8a4a2b;
+  --gold: #c99b4a;
+  --green: #3f4f35;
+  --dark: #1f1714;
+  --white: #fffaf4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+}
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+h1 {
+  color: var(--amber);
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 100px;
+}
