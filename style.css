@@ -47,27 +47,19 @@ h1,h2,h3{
 }
 
 .header-inner{
-
     width:min(1300px,92%);
-
     margin:auto;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    padding:18px 0;
-
+    padding:8px 0;
 }
 
 .brand-logo img{
-
-    width:115px;
-
+    width:60px;
+    height:auto;
+    display:block;
     transition:.35s;
-
 }
 
 .brand-logo img:hover{
