@@ -14,9 +14,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -30,20 +28,18 @@ img {
   max-width: 100%;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 92px;
+  height: 78px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 7%;
+  padding: 8px 7%;
   background: rgba(252, 247, 241, 0.96);
   backdrop-filter: blur(12px);
   z-index: 999;
@@ -51,25 +47,20 @@ a {
 }
 
 .logo img {
-  width: 135px;
+  width: 90px;
   height: auto;
 }
 
 .nav {
   display: flex;
-  gap: 38px;
+  gap: 34px;
 }
 
 .nav a {
   color: var(--brown);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  transition: 0.3s;
-}
-
-.nav a:hover {
-  color: var(--gold);
 }
 
 .menu-btn {
@@ -78,16 +69,15 @@ a {
   background: none;
   font-size: 1.8rem;
   color: var(--brown);
-  cursor: pointer;
 }
 
-.hero{
-    min-height:auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center;
-    gap:70px;
-    padding:140px 7% 80px;
+.hero {
+  min-height: auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 125px 7% 70px;
 }
 
 .eyebrow {
@@ -95,7 +85,7 @@ a {
   letter-spacing: 4px;
   text-transform: uppercase;
   font-size: 0.82rem;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .hero h1,
@@ -107,45 +97,44 @@ a {
   color: var(--brown);
 }
 
-.hero h1{
-    font-size:5rem;
-    line-height:.92;
+.hero h1 {
+  font-size: 4.8rem;
+  line-height: 0.92;
+  margin-bottom: 24px;
 }
 
 .hero p {
-  line-height: 1.9;
-  max-width: 520px;
-  margin-bottom: 35px;
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 28px;
 }
 
 .btn {
   display: inline-block;
   background: var(--gold);
   color: var(--white);
-  padding: 16px 36px;
+  padding: 14px 32px;
   border-radius: 50px;
-  transition: 0.3s;
   font-weight: 600;
 }
 
-.btn:hover {
-  background: var(--brown);
-  transform: translateY(-4px);
+.hero-image {
+  display: flex;
+  justify-content: center;
 }
 
-.hero-image img{
-    width:100%;
-    max-width:600px;
-    margin:auto;
-    border-radius:35px;
-    box-shadow:var(--shadow);
+.hero-image img {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
 }
 
 .collection,
 .about,
 .ritual,
 .contact {
-  padding: 120px 7%;
+  padding: 95px 7%;
 }
 
 .collection {
@@ -157,14 +146,14 @@ a {
 .about h2,
 .ritual h2,
 .contact h2 {
-  font-size: 3.4rem;
-  margin-bottom: 60px;
+  font-size: 3.2rem;
+  margin-bottom: 50px;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 26px;
 }
 
 .product-card {
@@ -178,28 +167,27 @@ a {
 }
 
 .product-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
 }
 
 .product-card img {
   width: 100%;
-  height: 300px;
+  height: 280px;
   object-fit: contain;
   background: var(--white);
-  padding: 25px;
+  padding: 22px;
 }
 
 .product-info {
-  padding: 25px;
+  padding: 22px;
   text-align: center;
 }
 
 .product-info h3 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   color: var(--brown);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .product-info p {
@@ -230,16 +218,15 @@ a {
 .ritual-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 50px;
+  gap: 26px;
+  margin-top: 45px;
 }
 
 .ritual-card {
   background: var(--white);
-  padding: 40px;
+  padding: 38px;
   border-radius: 22px;
   box-shadow: var(--shadow);
-  text-align: center;
 }
 
 .ritual-card h3 {
@@ -255,13 +242,13 @@ a {
 
 .contact p {
   max-width: 650px;
-  margin: 0 auto 35px;
+  margin: 0 auto 30px;
   line-height: 1.9;
 }
 
 footer {
   background: var(--brown);
-  padding: 60px 20px;
+  padding: 55px 20px;
   text-align: center;
 }
 
@@ -281,7 +268,7 @@ footer p {
   }
 
   .hero p {
-    margin: auto auto 35px;
+    margin: 0 auto 28px;
   }
 
   .product-grid {
@@ -295,11 +282,11 @@ footer p {
 
 @media (max-width: 768px) {
   .header {
-    height: 82px;
+    height: 76px;
   }
 
   .logo img {
-    width: 105px;
+    width: 80px;
   }
 
   .menu-btn {
@@ -314,7 +301,7 @@ footer p {
     display: flex;
     position: absolute;
     right: 7%;
-    top: 82px;
+    top: 76px;
     width: 240px;
     flex-direction: column;
     gap: 25px;
@@ -325,7 +312,7 @@ footer p {
   }
 
   .hero {
-    padding: 140px 7% 80px;
+    padding: 115px 7% 65px;
   }
 
   .hero h1 {
@@ -340,6 +327,6 @@ footer p {
   .about h2,
   .ritual h2,
   .contact h2 {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
   }
 }
