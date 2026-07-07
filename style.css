@@ -944,3 +944,65 @@ RESPONSIVE
     }
 
 }
+.seasonings-page .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(252, 247, 241, 0.96);
+    backdrop-filter: blur(12px);
+    z-index: 999;
+    padding: 18px 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+}
+
+.seasonings-page .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seasonings-page .logo img {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+
+.seasonings-page .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.seasonings-page .nav-links a {
+    text-decoration: none;
+    color: #1F3F28;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.seasonings-page .nav-links a:hover,
+.seasonings-page .nav-links a.active {
+    color: #CDA25A;
+}
+
+@media(max-width: 768px) {
+    .seasonings-page .nav-wrapper {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .seasonings-page .nav-links {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .seasonings-page .logo img {
+        width: 60px;
+    }
+}
