@@ -1006,3 +1006,99 @@ RESPONSIVE
         width: 60px;
     }
 }
+/* ===========================================================
+   SEASONINGS PAGE SIZE FIX
+=========================================================== */
+
+.seasonings-page {
+    overflow-x: hidden;
+}
+
+/* HERO FIX */
+.seasonings-page .pantry-hero {
+    min-height: auto;
+    padding: 150px 0 90px;
+}
+
+.seasonings-page .pantry-hero-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.seasonings-page .pantry-hero-image img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* SECTION SPACING FIX */
+.seasonings-page .pantry-intro,
+.seasonings-page .pantry-collection,
+.seasonings-page .pantry-story,
+.seasonings-page .pantry-benefits,
+.seasonings-page .pantry-cta {
+    padding: 80px 0;
+}
+
+/* PRODUCT CARD IMAGE FIX */
+.seasonings-page .pantry-product-image {
+    height: 420px;
+    overflow: hidden;
+}
+
+.seasonings-page .pantry-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CARD WIDTH FIX */
+.seasonings-page .pantry-product-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* STORY IMAGE FIX */
+.seasonings-page .pantry-story-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.seasonings-page .pantry-story-image img {
+    max-height: 560px;
+    object-fit: cover;
+}
+
+/* BENEFITS FIX */
+.seasonings-page .pantry-benefit-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .seasonings-page .pantry-hero {
+        padding: 140px 0 70px;
+    }
+
+    .seasonings-page .pantry-hero-image img {
+        max-width: 300px;
+    }
+
+    .seasonings-page .pantry-product-image {
+        height: 330px;
+    }
+
+    .seasonings-page .pantry-intro,
+    .seasonings-page .pantry-collection,
+    .seasonings-page .pantry-story,
+    .seasonings-page .pantry-benefits,
+    .seasonings-page .pantry-cta {
+        padding: 60px 0;
+    }
+}
