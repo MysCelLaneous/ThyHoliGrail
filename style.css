@@ -323,3 +323,624 @@ footer p {
     font-size: 2.5rem;
   }
 }
+/* ===========================================================
+   THY HOLI GRAIL
+   PREMIUM PANTRY COLLECTION
+   Add to the END of style.css
+=========================================================== */
+
+:root{
+
+    --pantry-green:#2F5D3A;
+    --pantry-green-dark:#1F3F28;
+    --pantry-gold:#CDA25A;
+    --pantry-cream:#FCF7F1;
+    --pantry-ivory:#F8F2EA;
+
+}
+
+
+/* ===========================================================
+BODY
+=========================================================== */
+
+.seasonings-page{
+
+    background:var(--pantry-cream);
+    color:#2d2d2d;
+
+}
+
+
+/* ===========================================================
+HERO
+=========================================================== */
+
+.pantry-hero{
+
+    padding:170px 0 120px;
+    background:
+    linear-gradient(
+        rgba(252,247,241,.94),
+        rgba(252,247,241,.94)
+    ),
+    url("assets/images/banana-leaf-bg.png");
+
+    background-size:cover;
+
+}
+
+.pantry-hero-grid{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+
+}
+
+.eyebrow{
+
+    display:inline-block;
+
+    color:var(--pantry-green);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.pantry-hero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:4.5rem;
+
+    line-height:1.05;
+
+    color:var(--pantry-green-dark);
+
+    margin-bottom:30px;
+
+}
+
+.pantry-hero p{
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    max-width:560px;
+
+    color:#555;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-green{
+
+    display:inline-block;
+
+    background:var(--pantry-green);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 38px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-green:hover{
+
+    background:var(--pantry-green-dark);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-green{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:var(--pantry-green);
+
+    border:2px solid var(--pantry-green);
+
+    padding:15px 38px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-outline-green:hover{
+
+    background:var(--pantry-green);
+
+    color:white;
+
+}
+
+.pantry-hero-image{
+
+    text-align:center;
+
+}
+
+.pantry-hero-image img{
+
+    width:100%;
+
+    max-width:480px;
+
+    border-radius:28px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+
+/* ===========================================================
+INTRO
+=========================================================== */
+
+.pantry-intro{
+
+    padding:110px 0;
+
+    text-align:center;
+
+}
+
+.pantry-intro h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:3rem;
+
+    color:var(--pantry-green-dark);
+
+    max-width:900px;
+
+    margin:20px auto;
+
+}
+
+.pantry-intro p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    line-height:2;
+
+    color:#666;
+
+}
+
+
+/* ===========================================================
+COLLECTION
+=========================================================== */
+
+.pantry-collection{
+
+    padding:110px 0;
+
+}
+
+.collection-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.collection-heading h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:3rem;
+
+    color:var(--pantry-green-dark);
+
+    margin:15px 0;
+
+}
+
+.collection-heading p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+.pantry-product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:40px;
+
+}
+
+.pantry-product-card{
+
+    background:white;
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.pantry-product-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+.pantry-product-image{
+
+    background:var(--pantry-ivory);
+
+    padding:35px;
+
+}
+
+.pantry-product-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.pantry-product-info{
+
+    padding:35px;
+
+}
+
+.pantry-product-info span{
+
+    color:var(--pantry-green);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.pantry-product-info h3{
+
+    margin:18px 0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:2rem;
+
+    color:var(--pantry-green-dark);
+
+}
+
+.pantry-product-info p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+.product-link{
+
+    color:var(--pantry-green);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.product-link:hover{
+
+    color:var(--pantry-gold);
+
+}
+
+
+/* ===========================================================
+STORY
+=========================================================== */
+
+.pantry-story{
+
+    padding:130px 0;
+
+    background:white;
+
+}
+
+.pantry-story-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.pantry-story-image img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    box-shadow:0 25px 55px rgba(0,0,0,.1);
+
+}
+
+.pantry-story-content h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:3rem;
+
+    color:var(--pantry-green-dark);
+
+    margin:20px 0 30px;
+
+}
+
+.pantry-story-content p{
+
+    line-height:2;
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+
+/* ===========================================================
+BENEFITS
+=========================================================== */
+
+.pantry-benefits{
+
+    padding:120px 0;
+
+}
+
+.pantry-benefit-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:35px;
+
+}
+
+.pantry-benefit{
+
+    background:white;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    border-radius:22px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+
+}
+
+.pantry-benefit span{
+
+    font-size:3rem;
+
+}
+
+.pantry-benefit h3{
+
+    margin:25px 0 15px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:2rem;
+
+    color:var(--pantry-green-dark);
+
+}
+
+.pantry-benefit p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/* ===========================================================
+CTA
+=========================================================== */
+
+.pantry-cta{
+
+    padding:140px 20px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+
+    rgba(31,63,40,.94),
+
+    rgba(31,63,40,.94)
+
+    ),
+
+    url("assets/images/banana-leaf-bg.png");
+
+    background-size:cover;
+
+}
+
+.pantry-cta .eyebrow{
+
+    color:#d8c38d;
+
+}
+
+.pantry-cta h2{
+
+    color:white;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:3.4rem;
+
+    margin:20px auto;
+
+    max-width:900px;
+
+}
+
+.pantry-cta p{
+
+    color:rgba(255,255,255,.85);
+
+    max-width:650px;
+
+    margin:0 auto 45px;
+
+    line-height:1.9;
+
+}
+
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .pantry-hero-grid,
+    .pantry-story-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .pantry-hero h1{
+
+        font-size:3.4rem;
+
+    }
+
+    .pantry-intro h2,
+    .collection-heading h2,
+    .pantry-story-content h2,
+    .pantry-cta h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:640px){
+
+    .pantry-hero{
+
+        padding:140px 0 80px;
+
+    }
+
+    .pantry-hero h1{
+
+        font-size:2.7rem;
+
+    }
+
+    .pantry-intro,
+    .pantry-collection,
+    .pantry-story,
+    .pantry-benefits,
+    .pantry-cta{
+
+        padding:80px 0;
+
+    }
+
+    .pantry-product-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
