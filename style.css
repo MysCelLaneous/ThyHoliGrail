@@ -61,8 +61,7 @@ a {
 
 .logo img {
     width: 220px;
-    max-height: 90px;
-    object-fit: contain;
+    height: auto;
 }
 
 .nav {
