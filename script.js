@@ -346,69 +346,69 @@ document.querySelectorAll(".home-product-card, .pantry-product-card").forEach(ca
 /* QUICK VIEW PRODUCT DATA */
 
 const productData = {
-    "Luster": {
-        category: "Body Cleanser",
-        title: "Luster Body Cleanser",
-        description: "A luxurious cleanser created to refresh the skin while supporting a soft, polished glow.",
-        benefits: ["Gentle daily cleanse", "Spa-inspired body care", "Soft polished finish"],
-        link: "https://thyholigrail.myshopify.com/products/luster-body-cleanser"
-    },
+   "Luster": {
+    category: "Body Cleanser",
+    title: "Luster Body Cleanser",
+    description: "A luxurious cleanser created to refresh the skin while supporting a soft, polished glow.",
+    benefits: ["Gentle daily cleanse", "Spa-inspired body care", "Soft polished finish"],
+    link: "https://thyholigrail.myshopify.com/products/luster-body-cleanser"
+},
 
-    "Herbal": {
-        category: "Hair Oil",
-        title: "Herbal Hair Oil",
-        description: "A nourishing herbal oil crafted to support healthy-looking hair and scalp care rituals.",
-        benefits: ["Nourishing hair ritual", "Scalp care inspired", "Lightweight finish"],
-        link: "https://thyholigrail.myshopify.com/products/herbal-hair-oil"
-    },
+"Herbal": {
+    category: "Hair Oil",
+    title: "Herbal Hair Oil",
+    description: "A nourishing herbal oil crafted to support healthy-looking hair and scalp care rituals.",
+    benefits: ["Nourishing hair ritual", "Scalp care inspired", "Lightweight finish"],
+    link: "https://thyholigrail.myshopify.com/products/herbal-hair-oil"
+},
 
-    "Velvet": {
-        category: "Body Butter",
-        title: "Velvet Body Butter",
-        description: "A rich, luxurious body butter crafted to deeply moisturize and leave skin feeling soft.",
-        benefits: ["Rich moisture", "Soft skin feel", "Luxury body care ritual"],
-        link: "https://thyholigrail.myshopify.com/products/velvet-body-butter"
-    },
+"Velvet": {
+    category: "Body Butter",
+    title: "Velvet Body Butter",
+    description: "A rich, luxurious body butter crafted to deeply moisturize and leave skin feeling soft.",
+    benefits: ["Rich moisture", "Soft skin feel", "Luxury body care ritual"],
+    link: "https://thyholigrail.myshopify.com/products/velvet-body-butter"
+},
 
-    "Silken": {
-        category: "Body Oil",
-        title: "Silken Body Oil",
-        description: "A lightweight body oil made to leave skin glowing, smooth, and beautifully nourished.",
-        benefits: ["Radiant glow", "Smooth finish", "Lightweight nourishment"],
-        link: "https://thyholigrail.myshopify.com/products/silken-body-oil"
-    },
+"Silken": {
+    category: "Body Oil",
+    title: "Silken Body Oil",
+    description: "A lightweight body oil made to leave skin glowing, smooth, and beautifully nourished.",
+    benefits: ["Radiant glow", "Smooth finish", "Lightweight nourishment"],
+    link: "https://thyholigrail.myshopify.com/products/silken-body-oil"
+},
 
-    "Hibiscus Harmony Tea": {
-        category: "Wellness Tea",
-        title: "Hibiscus Harmony Tea",
-        description: "A vibrant tea blend with a beautiful floral finish and a naturally refreshing character.",
-        benefits: ["Floral flavor", "Refreshing ritual", "Wellness inspired"],
-        link: "https://thyholigrail.myshopify.com/collections/premium-teas"
-    },
+"Hibiscus Harmony Tea": {
+    category: "Wellness Tea",
+    title: "Hibiscus Harmony Tea",
+    description: "A vibrant tea blend with a beautiful floral finish and a naturally refreshing character.",
+    benefits: ["Floral flavor", "Refreshing ritual", "Wellness inspired"],
+    link: "https://thyholigrail.myshopify.com/products/hibiscus-harmony-tea"
+},
 
-    "Pineapple Ginger Tea": {
-        category: "Wellness Tea",
-        title: "Pineapple Ginger Tea",
-        description: "A warm, bright blend with tropical sweetness and comforting ginger notes.",
-        benefits: ["Bright tropical notes", "Comforting ginger", "Perfect hot or iced"],
-        link: "https://thyholigrail.myshopify.com/collections/premium-teas"
-    },
+"Pineapple Ginger Tea": {
+    category: "Wellness Tea",
+    title: "Pineapple Ginger Tea",
+    description: "A warm, bright blend with tropical sweetness and comforting ginger notes.",
+    benefits: ["Bright tropical notes", "Comforting ginger", "Perfect hot or iced"],
+    link: "https://thyholigrail.myshopify.com/products/pineapple-ginger-tea"
+},
 
-    "All Purpose Seasoning": {
-        category: "Signature Seasoning",
-        title: "All Purpose Seasoning",
-        description: "A versatile kitchen essential designed for meats, vegetables, seafood, and more.",
-        benefits: ["Everyday flavor", "Versatile blend", "Perfect pantry staple"],
-        link: "https://thyholigrail.myshopify.com/collections/pantry-collection"
-    },
+"All Purpose Seasoning": {
+    category: "Signature Seasoning",
+    title: "All Purpose Seasoning",
+    description: "A versatile kitchen essential designed for meats, vegetables, seafood, and more.",
+    benefits: ["Everyday flavor", "Versatile blend", "Perfect pantry staple"],
+    link: "https://thyholigrail.myshopify.com/products/all-purpose-seasoning"
+},
 
-    "Low Sodium Seasoning": {
-        category: "Signature Seasoning",
-        title: "Low Sodium Seasoning",
-        description: "Full-bodied flavor with a lighter touch, crafted for mindful everyday cooking.",
-        benefits: ["Lower sodium option", "Full flavor", "Mindful cooking"],
-        link: "https://thyholigrail.myshopify.com/collections/pantry-collection"
-    }
+"Low Sodium Seasoning": {
+    category: "Signature Seasoning",
+    title: "Low Sodium Seasoning",
+    description: "Full-bodied flavor with a lighter touch, crafted for mindful everyday cooking.",
+    benefits: ["Lower sodium option", "Full flavor", "Mindful cooking"],
+    link: "https://thyholigrail.myshopify.com/products/low-sodium-seasoning"
+}
 };
 
 /* QUICK VIEW MODAL */
@@ -473,8 +473,7 @@ if (!data.link || data.link === "#") {
     modalShopLink.removeAttribute("target");
     modalShopLink.removeAttribute("rel");
 } else {
-    modalShopLink.textContent = "View Collection";
-    modalShopLink.href = data.link;
+    modalShopLink.textContent = "Add to Cart";
     modalShopLink.target = "_blank";
     modalShopLink.rel = "noopener noreferrer";
 }
