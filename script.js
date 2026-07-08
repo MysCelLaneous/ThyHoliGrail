@@ -328,31 +328,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-/* LUXURY LOADER */
-
-const loader = document.createElement("div");
-loader.className = "luxury-loader";
-
-loader.innerHTML = `
-    <div class="loader-inner">
-        <img src="${
-            document.body.classList.contains("seasonings-page")
-                ? "../assets/logo/hglogo2.png"
-                : "assets/logo/hglogo2.png"
-        }" alt="Thy Holi Grail Logo">
-        <p>Thy Holi Grail</p>
-    </div>
-`;
-
-document.body.appendChild(loader);
-
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        loader.classList.add("hidden");
-    }, 650);
-});
-
-
 /* PRODUCT GLOW FOLLOW */
 
 document.querySelectorAll(".home-product-card, .pantry-product-card").forEach(card => {
