@@ -2562,3 +2562,15 @@ height:380px;
 .brand-hero-collage .collage-small {
     display: none !important;
 }
+.contact-email {
+    display: inline-block;
+    margin: 18px 0 32px;
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.contact-email:hover {
+    color: var(--brown);
+}
