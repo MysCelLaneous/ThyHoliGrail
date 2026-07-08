@@ -60,14 +60,15 @@ a {
 }
 
 .logo img {
-    width: 220px;
+    width: 100%;
     height: auto;
     display: block;
 }
 .logo {
-    width: 220px;
+    width: 340px;
     height: auto;
     overflow: visible;
+    flex-shrink: 0;
 }
 
 .nav {
