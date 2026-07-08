@@ -2395,3 +2395,103 @@ height:380px;
 }
 
 }
+/* ===========================================================
+   COLLECTION HUB
+=========================================================== */
+
+.collection-hub {
+    padding: 95px 0;
+    background: var(--ivory);
+}
+
+.collection-hub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px;
+    margin-top: 60px;
+}
+
+.collection-hub-card {
+    min-height: 430px;
+    border-radius: 30px;
+    padding: 45px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 55px rgba(0,0,0,.1);
+    transition: .4s ease;
+}
+
+.collection-hub-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(31,31,31,.08),
+        rgba(31,31,31,.72)
+    );
+    z-index: 1;
+}
+
+.collection-hub-card div {
+    position: relative;
+    z-index: 2;
+    max-width: 440px;
+}
+
+.collection-hub-card span {
+    color: #F0D79A;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+.collection-hub-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    color: white;
+    font-size: 3rem;
+    margin: 16px 0;
+}
+
+.collection-hub-card p {
+    color: rgba(255,255,255,.86);
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.collection-hub-card strong {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.collection-hub-card:hover {
+    transform: translateY(-10px);
+}
+
+.bodycare-hub {
+    background:
+        url("assets/images/hero.JPG")
+        center/cover no-repeat;
+}
+
+.pantry-hub {
+    background:
+        url("assets/images/seasonings2.PNG")
+        center/cover no-repeat;
+}
+
+@media(max-width: 850px) {
+    .collection-hub-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-hub-card {
+        min-height: 360px;
+    }
+
+    .collection-hub-card h3 {
+        font-size: 2.4rem;
+    }
+}
