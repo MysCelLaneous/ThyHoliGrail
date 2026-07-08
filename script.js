@@ -378,7 +378,7 @@ const productData = {
         link: "https://thyholigrail.myshopify.com/products/silken-body-oil"
     },
 
- "Hibiscus Harmony Tea": {
+"Hibiscus Harmony Tea": {
     category: "Wellness Tea",
     title: "Hibiscus Harmony Tea",
     description: "A vibrant tea blend with a beautiful floral finish and a naturally refreshing character.",
@@ -392,8 +392,9 @@ const productData = {
     description: "A warm, bright blend with tropical sweetness and comforting ginger notes.",
     benefits: ["Bright tropical notes", "Comforting ginger", "Perfect hot or iced"],
     link: "https://thyholigrail.myshopify.com/collections/premium-teas"
-}
- "All Purpose Seasoning": {
+},
+
+"All Purpose Seasoning": {
     category: "Signature Seasoning",
     title: "All Purpose Seasoning",
     description: "A versatile kitchen essential designed for meats, vegetables, seafood, and more.",
