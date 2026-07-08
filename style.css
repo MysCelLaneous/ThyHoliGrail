@@ -127,11 +127,9 @@ a {
 }
 
 .hero-image img{
-    width:92%;
-    height:auto;
+    width:100%;
+    height:100%;
     object-fit:contain;
-    display:block;
-    margin:auto;
 }
 
 .collection,
