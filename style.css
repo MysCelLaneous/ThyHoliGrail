@@ -1927,3 +1927,342 @@ body {
         border-radius: 22px;
     }
 }
+/* ===========================================================
+   PHASE 4 — LUXURY BRAND EXPERIENCE
+   Paste at the VERY BOTTOM of style.css
+=========================================================== */
+
+/* SCROLL PROGRESS BAR */
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(
+        90deg,
+        var(--gold),
+        var(--pantry-green)
+    );
+    z-index: 9999;
+}
+
+/* LUXURY LOADER */
+
+.luxury-loader {
+    position: fixed;
+    inset: 0;
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    transition: opacity .6s ease, visibility .6s ease;
+}
+
+.luxury-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-inner {
+    text-align: center;
+}
+
+.loader-inner img {
+    width: 120px;
+    margin: 0 auto 22px;
+    animation: loaderPulse 1.8s ease-in-out infinite;
+}
+
+.loader-inner p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.6rem;
+    color: var(--brown);
+    letter-spacing: 2px;
+}
+
+@keyframes loaderPulse {
+    0% {
+        transform: scale(1);
+        opacity: .75;
+    }
+
+    50% {
+        transform: scale(1.06);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: .75;
+    }
+}
+
+/* FLOATING BACKGROUND ACCENTS */
+
+.home-hero,
+.pantry-hero,
+.home-contact,
+.pantry-cta {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero::before,
+.pantry-hero::before,
+.home-contact::before,
+.pantry-cta::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(205,162,90,.18),
+        transparent 68%
+    );
+    top: 8%;
+    right: -130px;
+    pointer-events: none;
+    animation: softFloat 8s ease-in-out infinite;
+}
+
+.pantry-hero::before,
+.pantry-cta::before {
+    background: radial-gradient(
+        circle,
+        rgba(47,93,58,.18),
+        transparent 68%
+    );
+}
+
+@keyframes softFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* PRODUCT GLOW */
+
+.home-product-card,
+.pantry-product-card {
+    position: relative;
+}
+
+.home-product-card::before,
+.pantry-product-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at var(--x, 50%) var(--y, 50%),
+        rgba(205,162,90,.18),
+        transparent 38%
+    );
+    opacity: 0;
+    transition: opacity .35s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.pantry-product-card::before {
+    background: radial-gradient(
+        circle at var(--x, 50%) var(--y, 50%),
+        rgba(47,93,58,.18),
+        transparent 38%
+    );
+}
+
+.home-product-card:hover::before,
+.pantry-product-card:hover::before {
+    opacity: 1;
+}
+
+.home-product-image,
+.home-product-info,
+.pantry-product-image,
+.pantry-product-info {
+    position: relative;
+    z-index: 2;
+}
+
+/* LUXURY QUICK VIEW MODAL */
+
+.quick-view-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(31, 23, 19, .72);
+    backdrop-filter: blur(10px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 9998;
+}
+
+.quick-view-modal.active {
+    display: flex;
+}
+
+.quick-view-box {
+    width: min(980px, 100%);
+    background: var(--cream);
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 35px 90px rgba(0,0,0,.28);
+    position: relative;
+    animation: modalFadeUp .45s ease both;
+}
+
+@keyframes modalFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.quick-view-image {
+    background: var(--ivory);
+    padding: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-view-image img {
+    max-height: 460px;
+    object-fit: contain;
+}
+
+.quick-view-content {
+    padding: 55px 45px;
+}
+
+.quick-view-content span {
+    display: inline-block;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: .78rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.quick-view-content h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    color: var(--brown);
+    margin-bottom: 18px;
+}
+
+.quick-view-content p {
+    line-height: 1.9;
+    color: var(--text);
+    margin-bottom: 26px;
+}
+
+.quick-view-content ul {
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.quick-view-content li {
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.quick-view-content li::before {
+    content: "✦";
+    color: var(--gold);
+    margin-right: 10px;
+}
+
+.quick-view-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    background: transparent;
+    border: none;
+    color: var(--brown);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* PANTRY MODAL COLORS */
+
+.quick-view-modal.pantry-mode .quick-view-content span,
+.quick-view-modal.pantry-mode .quick-view-content li::before {
+    color: var(--pantry-green);
+}
+
+.quick-view-modal.pantry-mode .quick-view-content h3 {
+    color: var(--pantry-green-dark);
+}
+
+/* PREMIUM FOOTER UPGRADE */
+
+.footer {
+    overflow: hidden;
+}
+
+.footer::after {
+    content: "THY HOLI GRAIL";
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3rem, 9vw, 8rem);
+    color: rgba(255,255,255,.04);
+    line-height: 1;
+    margin-top: 30px;
+    letter-spacing: 8px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+    .quick-view-box {
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .quick-view-image {
+        padding: 35px;
+    }
+
+    .quick-view-image img {
+        max-height: 300px;
+    }
+
+    .quick-view-content {
+        padding: 38px 28px;
+    }
+
+    .quick-view-content h3 {
+        font-size: 2.4rem;
+    }
+}
