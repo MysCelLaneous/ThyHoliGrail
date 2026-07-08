@@ -2535,3 +2535,30 @@ height:380px;
 .brand-hero-collage .collage-small {
     display: none !important;
 }
+/* ===========================================================
+   FINAL HOME HERO SINGLE IMAGE FIX
+   Paste at the VERY BOTTOM of style.css
+=========================================================== */
+
+.brand-hero-collage {
+    position: static !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.brand-hero-collage .collage-main {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 32px !important;
+    box-shadow: 0 30px 60px rgba(0,0,0,.14) !important;
+}
+
+.brand-hero-collage .collage-small {
+    display: none !important;
+}
