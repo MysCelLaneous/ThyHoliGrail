@@ -1022,6 +1022,34 @@ RESPONSIVE
     .seasonings-page .logo img {
         width: 60px;
     }
+  .seasonings-page .header {
+    height: auto;
+    padding: 16px 5% 18px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seasonings-page .logo {
+    width: auto;
+}
+
+.seasonings-page .logo img {
+    width: 55px;
+}
+
+.seasonings-page .logo span {
+    display: none;
+}
+
+.seasonings-page .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seasonings-page .nav-links a {
+    font-size: .95rem;
+    letter-spacing: 1.5px;
 }
 /* ===========================================================
    SEASONINGS PAGE SIZE FIX
