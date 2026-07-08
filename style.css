@@ -1948,58 +1948,6 @@ body {
     z-index: 9999;
 }
 
-/* LUXURY LOADER */
-
-.luxury-loader {
-    position: fixed;
-    inset: 0;
-    background: var(--cream);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000;
-    transition: opacity .6s ease, visibility .6s ease;
-}
-
-.luxury-loader.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.loader-inner {
-    text-align: center;
-}
-
-.loader-inner img {
-    width: 120px;
-    margin: 0 auto 22px;
-    animation: loaderPulse 1.8s ease-in-out infinite;
-}
-
-.loader-inner p {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.6rem;
-    color: var(--brown);
-    letter-spacing: 2px;
-}
-
-@keyframes loaderPulse {
-    0% {
-        transform: scale(1);
-        opacity: .75;
-    }
-
-    50% {
-        transform: scale(1.06);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: .75;
-    }
-}
-
 /* FLOATING BACKGROUND ACCENTS */
 
 .home-hero,
