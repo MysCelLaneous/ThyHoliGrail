@@ -470,10 +470,12 @@ function openProductModal(card, productName, isPantry = false) {
 modalShopLink.target = "_blank";
 modalShopLink.rel = "noopener noreferrer";
 
-  if (data.link === "#") {
+if (!data.link || data.link === "#") {
     modalShopLink.textContent = "Coming Soon";
+    modalShopLink.href = "#";
 } else {
     modalShopLink.textContent = "View Collection";
+    modalShopLink.href = data.link;
 }
     modal.classList.toggle("pantry-mode", isPantry);
     modal.classList.add("active");
