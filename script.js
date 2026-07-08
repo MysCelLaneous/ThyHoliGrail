@@ -473,7 +473,7 @@ if (!data.link || data.link === "#") {
     modalShopLink.removeAttribute("target");
     modalShopLink.removeAttribute("rel");
 } else {
-    modalShopLink.textContent = "Shop Now";
+    modalShopLink.textContent = "Add to Cart";
     modalShopLink.href = data.link;
     modalShopLink.target = "_blank";
     modalShopLink.rel = "noopener noreferrer";
