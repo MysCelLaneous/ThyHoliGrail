@@ -1050,6 +1050,51 @@ RESPONSIVE
 .seasonings-page .nav-links a {
     font-size: .95rem;
     letter-spacing: 1.5px;
+  @media (max-width: 768px) {
+    .seasonings-page .header {
+        height: auto;
+        padding: 16px 5%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .seasonings-page .logo img {
+        width: 55px;
+    }
+
+    .seasonings-page .logo span {
+        display: none;
+    }
+
+    .seasonings-page .menu-btn {
+        display: block;
+        font-size: 2rem;
+        color: var(--green);
+        z-index: 1001;
+    }
+
+    .seasonings-page .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(252, 247, 241, .98);
+        padding: 24px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        box-shadow: 0 12px 24px rgba(0,0,0,.08);
+    }
+
+    .seasonings-page .nav-links.active {
+        display: flex;
+    }
+
+    .seasonings-page .nav-links a {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
 }
 /* ===========================================================
    SEASONINGS PAGE SIZE FIX
