@@ -2510,3 +2510,28 @@ height:380px;
         font-size: 2.4rem;
     }
 }
+/* ===========================================================
+   HOME HERO IMAGE FIX
+   Paste at the VERY BOTTOM of style.css
+=========================================================== */
+
+.brand-hero-collage {
+    height: auto !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-hero-collage .collage-main {
+    position: static !important;
+    width: 100% !important;
+    max-width: 520px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 32px;
+    box-shadow: 0 30px 60px rgba(0,0,0,.14);
+}
+
+.brand-hero-collage .collage-small {
+    display: none !important;
+}
