@@ -466,7 +466,9 @@ function openProductModal(card, productName, isPantry = false) {
         .map(item => `<li>${item}</li>`)
         .join("");
 
-    modalShopLink.href = data.link;
+   modalShopLink.href = data.link;
+modalShopLink.target = "_blank";
+modalShopLink.rel = "noopener noreferrer";
 
   if (data.link === "#") {
     modalShopLink.textContent = "Coming Soon";
