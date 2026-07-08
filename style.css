@@ -53,9 +53,16 @@ a {
   box-shadow: 0 5px 20px rgba(0,0,0,.04);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .logo img {
-    width: 160px;
-    height: auto;
+    width: 220px;
+    max-height: 90px;
+    object-fit: contain;
 }
 
 .nav {
