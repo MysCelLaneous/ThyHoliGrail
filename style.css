@@ -1636,3 +1636,294 @@ RESPONSIVE
         width: 75px;
     }
 }
+/* ===========================================================
+   PHASE 2 — PREMIUM DETAILS + SHARED ANIMATIONS
+   Paste at the VERY BOTTOM of style.css
+=========================================================== */
+
+/* SMOOTHER SITE FEEL */
+
+html {
+    scroll-padding-top: 100px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* SHARED BUTTON POLISH */
+
+.btn,
+.btn-gold,
+.btn-outline-gold,
+.btn-green,
+.btn-outline-green {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after,
+.btn-gold::after,
+.btn-outline-gold::after,
+.btn-green::after,
+.btn-outline-green::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+    transition: .65s ease;
+}
+
+.btn:hover::after,
+.btn-gold:hover::after,
+.btn-outline-gold:hover::after,
+.btn-green:hover::after,
+.btn-outline-green:hover::after {
+    left: 120%;
+}
+
+/* GOLD ACCENT LINES */
+
+.home-page .collection-heading::after,
+.seasonings-page .collection-heading::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 2px;
+    margin: 28px auto 0;
+    background: var(--gold);
+}
+
+.seasonings-page .collection-heading::after {
+    background: var(--pantry-green);
+}
+
+/* IMAGE LIFT + SOFT ZOOM */
+
+.home-product-image,
+.pantry-product-image,
+.home-about-image,
+.home-pantry-image,
+.pantry-story-image,
+.home-hero-image,
+.pantry-hero-image {
+    overflow: hidden;
+}
+
+.home-product-image img,
+.pantry-product-image img,
+.home-about-image img,
+.home-pantry-image img,
+.pantry-story-image img,
+.home-hero-image img,
+.pantry-hero-image img {
+    transition: transform .55s ease, filter .55s ease;
+}
+
+.home-product-card:hover img,
+.pantry-product-card:hover img,
+.home-about-image:hover img,
+.home-pantry-image:hover img,
+.pantry-story-image:hover img,
+.home-hero-image:hover img,
+.pantry-hero-image:hover img {
+    transform: scale(1.035);
+}
+
+/* CARD BORDER GLOW */
+
+.home-product-card,
+.pantry-product-card,
+.home-ritual-card,
+.pantry-benefit {
+    border: 1px solid rgba(205,162,90,.16);
+}
+
+.pantry-product-card,
+.pantry-benefit {
+    border-color: rgba(47,93,58,.16);
+}
+
+.home-product-card:hover,
+.home-ritual-card:hover {
+    border-color: rgba(205,162,90,.45);
+}
+
+.pantry-product-card:hover,
+.pantry-benefit:hover {
+    border-color: rgba(47,93,58,.42);
+}
+
+/* ELEGANT SECTION DIVIDERS */
+
+.home-intro,
+.pantry-intro {
+    position: relative;
+}
+
+.home-intro::before,
+.pantry-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: min(920px, 82%);
+    height: 1px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(205,162,90,.45),
+        transparent
+    );
+}
+
+.pantry-intro::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(47,93,58,.35),
+        transparent
+    );
+}
+
+/* NAV UNDERLINE */
+
+.home-page .nav a,
+.seasonings-page .nav-links a {
+    position: relative;
+}
+
+.home-page .nav a::after,
+.seasonings-page .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width .3s ease;
+}
+
+.home-page .nav a:hover::after,
+.home-page .nav a.active::after,
+.seasonings-page .nav-links a:hover::after,
+.seasonings-page .nav-links a.active::after {
+    width: 100%;
+}
+
+/* SCROLL REVEAL */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* STAGGER EFFECT */
+
+.reveal-delay-1 {
+    transition-delay: .12s;
+}
+
+.reveal-delay-2 {
+    transition-delay: .22s;
+}
+
+.reveal-delay-3 {
+    transition-delay: .32s;
+}
+
+/* HERO LOAD ANIMATION */
+
+.home-hero-content,
+.pantry-hero-content {
+    animation: heroFadeUp .9s ease both;
+}
+
+.home-hero-image,
+.pantry-hero-image {
+    animation: heroFadeIn .95s ease .15s both;
+}
+
+@keyframes heroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(22px) scale(.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* FOOTER POLISH */
+
+.footer {
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    display: block;
+    width: min(920px, 82%);
+    height: 1px;
+    margin: 0 auto 40px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.28),
+        transparent
+    );
+}
+
+/* MOBILE POLISH */
+
+@media (max-width: 640px) {
+    .btn,
+    .btn-gold,
+    .btn-outline-gold,
+    .btn-green,
+    .btn-outline-green {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        align-items: center;
+    }
+
+    .home-product-card,
+    .pantry-product-card {
+        border-radius: 22px;
+    }
+}
