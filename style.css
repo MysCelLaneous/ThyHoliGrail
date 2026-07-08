@@ -52,12 +52,6 @@ a {
   z-index: 999;
   box-shadow: 0 5px 20px rgba(0,0,0,.04);
 }
-
-.logo img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 .logo {
     display: flex;
     align-items: center;
@@ -65,6 +59,11 @@ a {
     height: auto;
     overflow: visible;
     flex-shrink: 0;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .nav {
