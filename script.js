@@ -378,39 +378,36 @@ const productData = {
         link: "https://thyholigrail.myshopify.com/products/silken-body-oil"
     },
 
-    "Hibiscus Harmony Tea": {
-        category: "Wellness Tea",
-        title: "Hibiscus Harmony Tea",
-        description: "A vibrant tea blend with a beautiful floral finish and a naturally refreshing character.",
-        benefits: ["Floral flavor", "Refreshing ritual", "Wellness inspired"],
-        link: "#"
-    },
+ "Hibiscus Harmony Tea": {
+    category: "Wellness Tea",
+    title: "Hibiscus Harmony Tea",
+    description: "A vibrant tea blend with a beautiful floral finish and a naturally refreshing character.",
+    benefits: ["Floral flavor", "Refreshing ritual", "Wellness inspired"],
+    link: "https://thyholigrail.myshopify.com/collections/premium-teas"
+},
 
-    "Pineapple Ginger Tea": {
-        category: "Wellness Tea",
-        title: "Pineapple Ginger Tea",
-        description: "A warm, bright blend with tropical sweetness and comforting ginger notes.",
-        benefits: ["Bright tropical notes", "Comforting ginger", "Perfect hot or iced"],
-        link: "#"
-    },
+"Pineapple Ginger Tea": {
+    category: "Wellness Tea",
+    title: "Pineapple Ginger Tea",
+    description: "A warm, bright blend with tropical sweetness and comforting ginger notes.",
+    benefits: ["Bright tropical notes", "Comforting ginger", "Perfect hot or iced"],
+    link: "https://thyholigrail.myshopify.com/collections/premium-teas"
+}
+ "All Purpose Seasoning": {
+    category: "Signature Seasoning",
+    title: "All Purpose Seasoning",
+    description: "A versatile kitchen essential designed for meats, vegetables, seafood, and more.",
+    benefits: ["Everyday flavor", "Versatile blend", "Perfect pantry staple"],
+    link: "https://thyholigrail.myshopify.com/collections/pantry-collection"
+},
 
-    "All Purpose Seasoning": {
-        category: "Signature Seasoning",
-        title: "All Purpose Seasoning",
-        description: "A versatile kitchen essential designed for meats, vegetables, seafood, and more.",
-        benefits: ["Everyday flavor", "Versatile blend", "Perfect pantry staple"],
-        link: "#"
-    },
-
-    "Low Sodium Seasoning": {
-        category: "Signature Seasoning",
-        title: "Low Sodium Seasoning",
-        description: "Full-bodied flavor with a lighter touch, crafted for mindful everyday cooking.",
-        benefits: ["Lower sodium option", "Full flavor", "Mindful cooking"],
-        link: "#"
-    }
-};
-
+"Low Sodium Seasoning": {
+    category: "Signature Seasoning",
+    title: "Low Sodium Seasoning",
+    description: "Full-bodied flavor with a lighter touch, crafted for mindful everyday cooking.",
+    benefits: ["Lower sodium option", "Full flavor", "Mindful cooking"],
+    link: "https://thyholigrail.myshopify.com/collections/pantry-collection"
+}
 
 /* QUICK VIEW MODAL */
 
