@@ -468,12 +468,11 @@ function openProductModal(card, productName, isPantry = false) {
 
     modalShopLink.href = data.link;
 
-    if (data.link === "#") {
-        modalShopLink.textContent = "Coming Soon";
-    } else {
-        modalShopLink.textContent = "Shop on Shopify";
-    }
-
+  if (data.link === "#") {
+    modalShopLink.textContent = "Coming Soon";
+} else {
+    modalShopLink.textContent = "View Collection";
+}
     modal.classList.toggle("pantry-mode", isPantry);
     modal.classList.add("active");
 
