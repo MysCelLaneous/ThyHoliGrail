@@ -1102,3 +1102,537 @@ RESPONSIVE
         padding: 60px 0;
     }
 }
+/* ===========================================================
+   PHASE 1 — HOME PAGE LUXURY UPGRADE
+   Paste at the VERY BOTTOM of style.css
+=========================================================== */
+
+:root {
+    --home-brown: #4B2F27;
+    --home-brown-dark: #2E1B16;
+    --home-gold: #CDA25A;
+    --home-cream: #FCF7F1;
+    --home-ivory: #F8F2EA;
+    --home-white: #FFFFFF;
+    --home-text: #6A544C;
+}
+
+/* GLOBAL HOME FIX */
+
+.home-page {
+    background: var(--home-cream);
+    color: var(--home-text);
+    overflow-x: hidden;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+/* HEADER UPGRADE */
+
+.home-page .header {
+    height: 88px;
+    padding: 10px 5%;
+    background: rgba(252, 247, 241, 0.96);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 30px rgba(0,0,0,.04);
+}
+
+.home-page .logo img {
+    width: 86px;
+}
+
+.home-page .nav {
+    gap: 34px;
+}
+
+.home-page .nav a {
+    color: var(--home-brown);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+.home-page .nav a:hover,
+.home-page .nav a.active {
+    color: var(--home-gold);
+}
+
+.home-page .menu-btn {
+    color: var(--home-brown);
+}
+
+/* HERO */
+
+.home-hero {
+    padding: 155px 0 95px;
+    background:
+        linear-gradient(
+            rgba(252,247,241,.92),
+            rgba(252,247,241,.92)
+        ),
+        url("assets/images/banana-leaf-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.home-page .eyebrow {
+    display: inline-block;
+    color: var(--home-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: .82rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.home-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5rem;
+    line-height: .95;
+    color: var(--home-brown-dark);
+    margin-bottom: 28px;
+}
+
+.home-hero-content > p:not(.eyebrow) {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    max-width: 560px;
+    color: var(--home-text);
+    margin-bottom: 38px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.btn-gold,
+.btn-outline-gold {
+    display: inline-block;
+    padding: 15px 38px;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: .35s ease;
+}
+
+.btn-gold {
+    background: var(--home-gold);
+    color: white;
+}
+
+.btn-gold:hover {
+    background: var(--home-brown);
+    transform: translateY(-3px);
+}
+
+.btn-outline-gold {
+    border: 2px solid var(--home-gold);
+    color: var(--home-brown);
+}
+
+.btn-outline-gold:hover {
+    background: var(--home-gold);
+    color: white;
+}
+
+.home-hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.12);
+    margin-left: auto;
+}
+
+/* INTRO */
+
+.home-intro {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.home-intro h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    color: var(--home-brown-dark);
+    max-width: 880px;
+    margin: 18px auto;
+}
+
+.home-intro p:not(.eyebrow) {
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--home-text);
+}
+
+/* COLLECTION */
+
+.home-collection {
+    padding: 90px 0;
+    background: var(--home-ivory);
+}
+
+.home-page .collection-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.home-page .collection-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    color: var(--home-brown-dark);
+    margin: 15px 0;
+}
+
+.home-page .collection-heading p:not(.eyebrow) {
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.9;
+    color: var(--home-text);
+}
+
+.home-product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 32px;
+}
+
+.home-product-card {
+    display: block;
+    background: white;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0,0,0,.08);
+    transition: .35s ease;
+}
+
+.home-product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 28px 65px rgba(0,0,0,.12);
+}
+
+.home-product-image {
+    height: 310px;
+    background: white;
+    padding: 28px;
+}
+
+.home-product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-product-info {
+    padding: 30px;
+}
+
+.home-product-info span {
+    color: var(--home-gold);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.home-product-info h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.2rem;
+    color: var(--home-brown-dark);
+    margin: 14px 0;
+}
+
+.home-product-info p {
+    line-height: 1.8;
+    color: var(--home-text);
+    margin-bottom: 22px;
+}
+
+.home-product-info strong {
+    color: var(--home-gold);
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* ABOUT */
+
+.home-about {
+    padding: 95px 0;
+    background: white;
+}
+
+.home-about-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.home-about-image img {
+    width: 100%;
+    max-height: 560px;
+    object-fit: contain;
+    border-radius: 30px;
+    box-shadow: 0 25px 55px rgba(0,0,0,.09);
+    background: var(--home-ivory);
+    padding: 30px;
+}
+
+.home-about-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    color: var(--home-brown-dark);
+    margin: 18px 0 28px;
+}
+
+.home-about-content p:not(.eyebrow) {
+    line-height: 2;
+    margin-bottom: 22px;
+    color: var(--home-text);
+}
+
+/* PANTRY PREVIEW */
+
+.home-pantry-preview {
+    padding: 95px 0;
+    background: var(--home-cream);
+}
+
+.home-pantry-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.home-pantry-content h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    color: var(--pantry-green-dark);
+    margin: 18px 0 28px;
+}
+
+.home-pantry-content p:not(.eyebrow) {
+    line-height: 2;
+    color: var(--home-text);
+    margin-bottom: 35px;
+}
+
+.home-pantry-image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 25px 55px rgba(0,0,0,.1);
+}
+
+/* RITUAL */
+
+.home-ritual {
+    padding: 95px 0;
+    background: var(--home-ivory);
+}
+
+.home-ritual-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.home-ritual-card {
+    background: white;
+    padding: 42px 34px;
+    border-radius: 24px;
+    box-shadow: 0 12px 38px rgba(0,0,0,.07);
+    transition: .35s ease;
+}
+
+.home-ritual-card:hover {
+    transform: translateY(-8px);
+}
+
+.home-ritual-card span {
+    color: var(--home-gold);
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.home-ritual-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.1rem;
+    color: var(--home-brown-dark);
+    margin: 18px 0 12px;
+}
+
+.home-ritual-card p {
+    line-height: 1.8;
+    color: var(--home-text);
+}
+
+/* CONTACT CTA */
+
+.home-contact {
+    padding: 120px 20px;
+    text-align: center;
+    background:
+        linear-gradient(
+            rgba(75,47,39,.92),
+            rgba(75,47,39,.92)
+        ),
+        url("assets/images/banana-leaf-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-contact .eyebrow {
+    color: #E1C98C;
+}
+
+.home-contact h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.4rem;
+    color: white;
+    max-width: 850px;
+    margin: 18px auto;
+}
+
+.home-contact p:not(.eyebrow) {
+    color: rgba(255,255,255,.86);
+    max-width: 680px;
+    margin: 0 auto 38px;
+    line-height: 1.9;
+}
+
+/* FOOTER */
+
+.footer {
+    background: var(--home-brown-dark);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 135px;
+    margin: 0 auto 22px;
+}
+
+.footer p {
+    color: rgba(255,255,255,.86);
+    margin-bottom: 8px;
+}
+
+/* HIDE OLD HOME SECTIONS IF OLD CSS STILL EXISTS */
+
+.home-page .hero,
+.home-page .collection,
+.home-page .about,
+.home-page .ritual,
+.home-page .contact {
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .home-hero-grid,
+    .home-about-grid,
+    .home-pantry-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home-hero-content > p:not(.eyebrow),
+    .home-pantry-content p:not(.eyebrow) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .home-hero-image img {
+        margin: 0 auto;
+    }
+
+    .home-about-image {
+        order: 2;
+    }
+
+    .home-about-content {
+        order: 1;
+    }
+
+    .home-ritual-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-hero h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-page .nav.active {
+        display: flex;
+        position: absolute;
+        top: 88px;
+        right: 5%;
+        width: 260px;
+        flex-direction: column;
+        gap: 22px;
+        padding: 28px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0,0,0,.15);
+    }
+}
+
+@media (max-width: 640px) {
+    .home-hero {
+        padding: 135px 0 75px;
+    }
+
+    .home-hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .home-intro,
+    .home-collection,
+    .home-about,
+    .home-pantry-preview,
+    .home-ritual {
+        padding: 70px 0;
+    }
+
+    .home-intro h2,
+    .home-page .collection-heading h2,
+    .home-about-content h2,
+    .home-pantry-content h2,
+    .home-contact h2 {
+        font-size: 2.35rem;
+    }
+
+    .home-product-image {
+        height: 280px;
+    }
+
+    .home-page .logo img {
+        width: 75px;
+    }
+}
