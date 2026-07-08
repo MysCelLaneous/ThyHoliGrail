@@ -1,154 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Thy Holi Grail | Luxury Body Care</title>
+    <title>Thy Holi Grail | Luxury Body Care</title>
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="home-page">
 
-<header class="header">
-  <a href="index.html" class="logo">
-    <img src="./assets/logo/hglogo2.png" alt="Thy Holi Grail Logo">
-  </a>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="./assets/logo/hglogo2.png" alt="Thy Holi Grail Logo">
+        </a>
 
-  <nav class="nav" id="nav">
-    <a href="index.html">Home</a>
-    <a href="#collection">Body Care</a>
-   <li><a href="pages/seasonings.html">Seasonings</a></li>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+        <nav class="nav" id="nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#collection">Body Care</a>
+            <a href="pages/seasonings.html">Seasonings</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-  <button class="menu-btn" id="menuBtn">☰</button>
-</header>
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+    </header>
 
-<main>
+    <main>
 
-<section class="hero" id="home">
-  <div class="hero-text">
-    <p class="eyebrow">Luxury Botanical Body Care</p>
+        <section class="home-hero" id="home">
+            <div class="container home-hero-grid">
 
-    <h1>Nourish.<br>Restore.<br>Glow.</h1>
+                <div class="home-hero-content">
+                    <p class="eyebrow">Luxury Botanical Body Care</p>
 
-    <p>
-      A warm, spa-inspired body care collection created for soft skin,
-      daily rituals, and effortless luxury.
-    </p>
+                    <h1>
+                        Nourish.<br>
+                        Restore.<br>
+                        Glow.
+                    </h1>
 
-    <a href="#collection" class="btn">Shop The Collection</a>
-  </div>
+                    <p>
+                        A warm, spa-inspired body care collection created for soft skin,
+                        daily rituals, and effortless luxury.
+                    </p>
 
-  <div class="hero-image">
-    <img src="./assets/images/hero.JPG" alt="Thy Holi Grail Body Care Collection">
-  </div>
-</section>
+                    <div class="hero-buttons">
+                        <a href="#collection" class="btn-gold">Shop Body Care</a>
+                        <a href="pages/seasonings.html" class="btn-outline-gold">Explore Pantry</a>
+                    </div>
+                </div>
 
-<section class="collection" id="collection">
-  <p class="eyebrow">Featured Collection</p>
-  <h2>The Body Care Line</h2>
+                <div class="home-hero-image">
+                    <img src="./assets/images/hero.JPG" alt="Thy Holi Grail Body Care Collection">
+                </div>
 
-  <div class="product-grid">
+            </div>
+        </section>
 
-    <a class="product-card" href="https://thyholigrail.myshopify.com/products/luster-body-cleanser">
-      <img src="./assets/images/Cleanser.PNG" alt="Luster Body Cleanser">
-      <div class="product-info">
-        <h3>Luster</h3>
-        <p>Body Cleanser</p>
-      </div>
-    </a>
+        <section class="home-intro">
+            <div class="container">
+                <p class="eyebrow">Luxury With Intention</p>
 
-    <a class="product-card" href="https://thyholigrail.myshopify.com/products/herbal-hair-oil">
-      <img src="./assets/images/HairOil.PNG" alt="Herbal Hair Oil">
-      <div class="product-info">
-        <h3>Herbal</h3>
-        <p>Hair Oil</p>
-      </div>
-    </a>
+                <h2>
+                    Body care made to feel rich, restorative, and sacred.
+                </h2>
 
-    <a class="product-card" href="https://thyholigrail.myshopify.com/products/velvet-body-butter">
-      <img src="./assets/images/BodyButter.PNG" alt="Velvet Body Butter">
-      <div class="product-info">
-        <h3>Velvet</h3>
-        <p>Luxury Body Butter</p>
-      </div>
-    </a>
+                <p>
+                    Thy Holi Grail blends warm botanicals, nourishing textures, and elevated presentation
+                    to create everyday self-care rituals that feel intentional and beautiful.
+                </p>
+            </div>
+        </section>
 
-    <a class="product-card" href="https://thyholigrail.myshopify.com/products/silken-body-oil">
-      <img src="./assets/images/BodyOil.PNG" alt="Silken Body Oil">
-      <div class="product-info">
-        <h3>Silken</h3>
-        <p>Body Oil</p>
-      </div>
-    </a>
+        <section class="home-collection" id="collection">
+            <div class="container">
 
-  </div>
-</section>
+                <div class="collection-heading">
+                    <p class="eyebrow">Featured Collection</p>
 
-<section class="about" id="about">
-  <div class="about-content">
-    <p class="eyebrow">About The Brand</p>
+                    <h2>The Body Care Line</h2>
 
-    <h2>Body care with intention.</h2>
+                    <p>
+                        Rich textures, beautiful ingredients, and indulgent formulas designed
+                        to cleanse, nourish, soften, and restore.
+                    </p>
+                </div>
 
-    <p>
-      Thy Holi Grail is created for those who believe self-care should feel luxurious,
-      natural, and restorative. Each product is designed to support your glow from the outside in.
-    </p>
-  </div>
-</section>
+                <div class="home-product-grid">
 
-<section class="ritual" id="ritual">
-  <p class="eyebrow">Daily Ritual</p>
-  <h2>Nourish. Restore. Glow.</h2>
+                    <a class="home-product-card" href="https://thyholigrail.myshopify.com/products/luster-body-cleanser">
+                        <div class="home-product-image">
+                            <img src="./assets/images/Cleanser.PNG" alt="Luster Body Cleanser">
+                        </div>
 
-  <div class="ritual-grid">
+                        <div class="home-product-info">
+                            <span>Body Cleanser</span>
+                            <h3>Luster</h3>
+                            <p>A luxurious cleanser created to refresh the skin while supporting a soft, polished glow.</p>
+                            <strong>Shop Now</strong>
+                        </div>
+                    </a>
 
-    <div class="ritual-card">
-      <h3>Cleanse</h3>
-      <p>Begin with a gentle body cleanser.</p>
-    </div>
+                    <a class="home-product-card" href="https://thyholigrail.myshopify.com/products/herbal-hair-oil">
+                        <div class="home-product-image">
+                            <img src="./assets/images/HairOil.PNG" alt="Herbal Hair Oil">
+                        </div>
 
-    <div class="ritual-card">
-      <h3>Moisturize</h3>
-      <p>Layer body butter and lotion for softness.</p>
-    </div>
+                        <div class="home-product-info">
+                            <span>Hair Oil</span>
+                            <h3>Herbal</h3>
+                            <p>A nourishing herbal oil crafted to support healthy-looking hair and scalp care rituals.</p>
+                            <strong>Shop Now</strong>
+                        </div>
+                    </a>
 
-    <div class="ritual-card">
-      <h3>Glow</h3>
-      <p>Finish with oil for a radiant touch.</p>
-    </div>
+                    <a class="home-product-card" href="https://thyholigrail.myshopify.com/products/velvet-body-butter">
+                        <div class="home-product-image">
+                            <img src="./assets/images/BodyButter.PNG" alt="Velvet Body Butter">
+                        </div>
 
-  </div>
-</section>
+                        <div class="home-product-info">
+                            <span>Body Butter</span>
+                            <h3>Velvet</h3>
+                            <p>A rich, luxurious body butter crafted to deeply moisturize and leave skin feeling soft.</p>
+                            <strong>Shop Now</strong>
+                        </div>
+                    </a>
 
-<section class="contact" id="contact">
-  <p class="eyebrow">Connect</p>
+                    <a class="home-product-card" href="https://thyholigrail.myshopify.com/products/silken-body-oil">
+                        <div class="home-product-image">
+                            <img src="./assets/images/BodyOil.PNG" alt="Silken Body Oil">
+                        </div>
 
-  <h2>Ready to experience Thy Holi Grail?</h2>
+                        <div class="home-product-info">
+                            <span>Body Oil</span>
+                            <h3>Silken</h3>
+                            <p>A lightweight body oil made to leave skin glowing, smooth, and beautifully nourished.</p>
+                            <strong>Shop Now</strong>
+                        </div>
+                    </a>
 
-  <p>
-    Contact us for product availability, custom orders, and launch updates.
-  </p>
+                </div>
 
-  <a href="https://thyholigrail.myshopify.com" class="btn">Visit The Shop</a>
-</section>
+            </div>
+        </section>
 
-</main>
+        <section class="home-about" id="about">
+            <div class="container home-about-grid">
 
-<footer>
-  <img src="./assets/logo/hglogo2.png" alt="Thy Holi Grail Logo">
-  <p>© 2026 Thy Holi Grail. All Rights Reserved.</p>
-</footer>
+                <div class="home-about-image">
+                    <img src="./assets/images/BodyButter.PNG" alt="Luxury body butter by Thy Holi Grail">
+                </div>
 
-<script src="script.js"></script>
+                <div class="home-about-content">
+                    <p class="eyebrow">About The Brand</p>
+
+                    <h2>
+                        Body care with intention.
+                    </h2>
+
+                    <p>
+                        Thy Holi Grail is created for those who believe self-care should feel luxurious,
+                        natural, and restorative. Each product is designed to support your glow from the outside in.
+                    </p>
+
+                    <p>
+                        From cleansing to moisturizing to finishing oils, every product is part of a ritual
+                        created to make daily care feel elevated, peaceful, and personal.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-pantry-preview">
+            <div class="container home-pantry-grid">
+
+                <div class="home-pantry-content">
+                    <p class="eyebrow">Premium Pantry Collection</p>
+
+                    <h2>
+                        Wellness teas and signature seasonings for intentional living.
+                    </h2>
+
+                    <p>
+                        Explore premium teas and flavorful seasoning blends designed to elevate
+                        your kitchen, your table, and your daily rituals.
+                    </p>
+
+                    <a href="pages/seasonings.html" class="btn-green">Explore Pantry</a>
+                </div>
+
+                <div class="home-pantry-image">
+                    <img src="./assets/images/AllPurpose.PNG" alt="Premium Seasoning Collection">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-ritual" id="ritual">
+            <div class="container">
+
+                <div class="collection-heading">
+                    <p class="eyebrow">Daily Ritual</p>
+
+                    <h2>Nourish. Restore. Glow.</h2>
+
+                    <p>
+                        Build a simple, luxurious routine that leaves your skin feeling cared for from start to finish.
+                    </p>
+                </div>
+
+                <div class="home-ritual-grid">
+
+                    <div class="home-ritual-card">
+                        <span>01</span>
+                        <h3>Cleanse</h3>
+                        <p>Begin with a gentle body cleanser that refreshes without stripping the skin.</p>
+                    </div>
+
+                    <div class="home-ritual-card">
+                        <span>02</span>
+                        <h3>Moisturize</h3>
+                        <p>Layer body butter for softness, richness, and lasting comfort.</p>
+                    </div>
+
+                    <div class="home-ritual-card">
+                        <span>03</span>
+                        <h3>Glow</h3>
+                        <p>Finish with oil for a radiant touch and a polished luxury feel.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-contact" id="contact">
+            <div class="container">
+                <p class="eyebrow">Connect</p>
+
+                <h2>
+                    Ready to experience Thy Holi Grail?
+                </h2>
+
+                <p>
+                    Shop luxury body care and premium pantry essentials crafted for elevated everyday living.
+                </p>
+
+                <a href="https://thyholigrail.myshopify.com" class="btn-gold">Visit The Shop</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="./assets/logo/hglogo2.png" alt="Thy Holi Grail Logo" class="footer-logo">
+
+            <p>Sweet. Smooth. Spiritual.</p>
+
+            <p>© 2026 Thy Holi Grail. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
